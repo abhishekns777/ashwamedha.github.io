@@ -173,13 +173,30 @@ h6 {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-
+#header #logo h2 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 #header #logo h1 span {
+  color: #f82249;
+}
+#header #logo h2 span {
   color: #f82249;
 }
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo h2 a,
+#header #logo h2 a:hover {
   color: #fff;
 }
 
@@ -511,12 +528,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 #intro h1 span {
+  color: #f82249;
+}
+#intro h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#intro h2 span {
   color: #f82249;
 }
 
@@ -1604,7 +1632,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro h1 {
     font-size: 34px;
   }
-
+  #intro h2 {
+    font-size: 34px;
+  }
   #intro p {
     font-size: 16px;
   }
