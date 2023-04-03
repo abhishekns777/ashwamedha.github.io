@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>>CSE || Regestration Form</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#venue">Venue</a></li>
+          <li><a href="index.html#brochures">Brochures</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#supporters">supporters</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <main id="main" class="main-page">
+
+    <!--==========================
+      Registration Section
+    ============================-->
+    <section id="registration" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Registration</h2>
+          <p>Please enter Valid input.</p>
+          <ul>
+            <h4 class="blink-bg"><b>Please NOTE :</b></h4>
+            <li style="color: red;">don't quit untill "successfully Submit" message will popup</a></li>
+            <li style="color: red;">Once you click the Submit button, wait 10-15 sec. sometime it will take a time to Submit</li>
+            <li style="color: red;">if it is Not Submited. again click the Submit button</li>
+        </ul>
+        </div>
+
+        
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" name="google-sheet" role="form" class="contactForm" onsubmit="showloader()">
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone No" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="gender" class="form-control" id="gender" placeholder="Gender" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="college" class="form-control" id="college" placeholder="Institute/College Name" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="year" class="form-control" id="year" placeholder="Year" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="branch" class="form-control" id="branch" placeholder="Branch" required />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="usn" class="form-control" id="usn" placeholder="USN" required/>
+                <div class="validation"></div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <select name="event" class="form-control" id="event" placeholder="Select your Event." required>
+                <option value="Not Selected">Select your Event</option>
+                <option value="Paper Presentation">Paper Presentation</option>
+                <option value="Tech Quiz">Tech Quiz</option>
+                <option value="Code Hunt">Code Hunt</option>
+                <option value="Treasure Hunt">Treasure Hunt</option>
+                <option value="Project Expo">Project Expo</option>
+              </select>
+              <div class="validation"></div>
+            </div>
+
+            <!--<div class="form-group">
+              <input type="file"  name="payment" class="form-control" id="payment" required />
+              <div class="validation"></div>
+            </div>-->
+
+            <!--<div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>-->
+
+            <div class="text-center" onclick.once="submitOnce()"><button type="submit" name="submit">Submit</button></div>
+        
+          </form>
+          <div class="loader" id="loader"></div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2023. All Rights Reserved by <br><strong>Dept. of Computer Science & Engineering || BGSIT || ACU</strong>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+    <!-- Java script function for storing Form details in google sheets -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzbzVSFleKRp1GOta5WVMtX3GLaPlMRgDdI9Ps--NlMRG3_xQ_EUhl9_tbGgbDdYt2l/exec'
+      const form = document.forms['google-sheet']
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thank you for Registering 'Ashwamedha Edition-I' !! your form is submitted successfully." ))
+        .then(() => {  window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+      })
+      </script>
+      
+</body>
+
+</html>
